@@ -57,3 +57,19 @@ function tinyFriend(ages){
 var ages =[14, 16, 13, 12, 11, 21, 22];
 var findSmallest = tinyFriend(ages);
 console.log(findSmallest);
+
+// Due to misunderstanding ,I have done it with ages earlier. After showing Jhankar bhai's fb post I do the tinyFriend with the length of name.
+
+function tinyFriends(name){
+    var smallest= name[0].length;
+    for(i = 0; i < name.length; i++){
+         var currentFriend = name[i].length;
+         if(currentFriend < smallest){
+             smallest = currentFriend;
+         }
+    }
+    return smallest;
+}
+
+var smallestFind = tinyFriends(['rahim', 'kari', 'poli', 'ham', 'fu']);
+console.log(smallestFind);
